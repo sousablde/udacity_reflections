@@ -1,33 +1,31 @@
-How did viewing a diff between two versions of a file help you see the bug that
-was introduced?
+Viewing a diff between two files helps indentifying areas where a new bug may
+have been introduced. So check those locations first when things are "suddenly"
+broken.
 
-    Fill in your answer here
+Other notes:
+Use git-bash to get linux style command prompt
+on windows you have program called FC. Can be runned from commandline:
+>>	FC file-old.js file-new.js
 
-How could having easy access to the entire history of a file make you a more
-efficient programmer in the long term?
+Reflect: Manual Commits
+By committing manually instead of automaticall, you can decide what to commit and when.
+This gives the opportunity to split the commits based on functionality. 
+By committing manually you can specify commit messages describing what has changed, instead of only showing an auto commit.
 
-    Fill in your answer here
+Reflect: Multi-File commits
+Multi-file commits are usefull when files are related to eachother.
+"Normal" documents seldom have relations, so those are not needed. In sourcecode, files will have lots of relations.
+So having multi-file commits is an essential feature.
 
-What do you think are the pros and cons of manually choosing when to create a
-commit, like you do in Git, vs having versions automatically saved, like Google
-docs does?
+Reflect: what do you want to try using Git for?
+Source code for a simple website/game
 
-    Fill in your answer here
+Commands:
 
-Why do you think some version control systems, like Git, allow saving multiple
-files in one commit, while others, like Google Docs, treat each file separately?
-
-    Fill in your answer here
-
-How can you use the commands git log and git diff to view the history of files?
-
-    Fill in your answer here
-
-How might using version control make you more confident to make changes that
-could break something?
-
-    Fill in your answer here
-
-Now that you have your workspace set up, what do you want to try using Git for?
-
-    Fill in your answer here
+q |    exit git log!
+git log  |    List the commits and show which files have changed
+git log --stat  |    Show addition information about the commits
+git diff id1 id2  |    Compare two commits
+git clone  |    Create a local copy/clone from the repository
+git config --global color.ui auto |    get colored diff output
+git checkout  |    Shows a previous version of the file. This is not a checkout to edit like in SVN or TFS!
